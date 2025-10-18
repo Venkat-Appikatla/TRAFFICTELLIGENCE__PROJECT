@@ -1,0 +1,76 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url("https://stat.overdrive.in/wp-content/uploads/2021/10/2021-jaguar-xf-facelift-india-01.jpg");
+           
+	    background-size: cover;        }
+        .pd {
+            padding-bottom: 100;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <center>
+        <b class="pd">
+            <font color="black" size="15" font-family="Comic Sans MS">
+                Traffic volume estimation
+            </font>
+        </b>
+    </center>
+    <div>
+        <br>
+        <center>
+            <p>
+                <font color="black">{{ result }}</font>
+            </p>
+        </center>
+        <center>
+            <p>
+                <font color="black">{{ prediction_text }}</font>
+            </p>
+        </center>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Volume Prediction</title>
+    <style>
+        body {
+            background-image: url("https://stat.overdrive.in/wp-content/uploads/2021/10/2021-jaguar-xf-facelift-india-01.jpg");
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Traffic Volume Estimation</div>
+    <div class="result-box">
+        {{ prediction_text }}
+    </div>
+</body>
+</html>
